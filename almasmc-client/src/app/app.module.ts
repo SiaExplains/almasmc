@@ -15,6 +15,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { FooterComponent } from './footer/footer.component';
 import { PageModule } from './pages/page.module';
 import { SharedModule } from './shared/shared.module';
+import { NewsComponent } from './news/news.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SharedModule } from './shared/shared.module';
     HeaderComponent,
     NavtabsComponent,
     SidenavListComponent,
-    FooterComponent
+    FooterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,52 @@
-<nav mat-tab-nav-bar>
-  <span class="toolbar-flex"></span>
-  <mat-tab-group class="Persian-Tab-Menu">
-    <mat-tab label="ارتباط با ما"></mat-tab>
-    <mat-tab label="همکاری با ما"></mat-tab>
-    <mat-tab label="فرم استعلام قیمت"></mat-tab>
-    <mat-tab label="تازه های تجارت"></mat-tab>
-    <mat-tab label="خدمات"></mat-tab>
-    <mat-tab label="درباره ما"></mat-tab>
-    <mat-tab label="خانه"></mat-tab>
-  </mat-tab-group>
-  <span class="toolbar-flex"></span>
-</nav>
+<div class="navtab-container">
+  <nav mat-tab-nav-bar fxLayout fxLayoutAlign="center center">
+      <a mat-tab-link
+      routerLink="/"
+      routerLinkActive #home="routerLinkActive"
+      [active]="home.isActive">
+        خانه
+      </a>
+
+      <a mat-tab-link
+        routerLink="/about"
+        routerLinkActive #about="routerLinkActive"
+        [active]="about.isActive">
+        درباره ما
+      </a>
+
+    <a mat-tab-link
+      routerLink="/services"
+      routerLinkActive #services="routerLinkActive"
+      [active]="services.isActive">
+        خدمات
+      </a>
+
+    <a mat-tab-link
+      routerLink="/news"
+      routerLinkActive #news="routerLinkActive"
+      [active]="news.isActive">
+      تازه های تجارت
+    </a>
+
+    <a mat-tab-link
+      routerLink="/inquiry"
+      routerLinkActive #inquiry="routerLinkActive"
+      [active]="inquiry.isActive">
+      فرم استعلام قیمت
+    </a>
+
+    <a mat-tab-link
+      routerLink="/jobs"
+      routerLinkActive #jobs="routerLinkActive"
+      [active]="jobs.isActive">
+      همکاری با ما
+    </a>
+
+    <a mat-tab-link
+      routerLink="/contacts"
+      routerLinkActive #contacts="routerLinkActive"
+      [active]="contacts.isActive">
+      تماس با ما
+    </a>
+  </nav>
+</div>
