@@ -6,21 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './navigation/header/header.component';
-import { HomeComponent } from './home/home.component';
-import { SliderComponent } from './home/slider/slider.component';
-import { NgxHmCarouselModule } from 'ngx-hm-carousel';
-import { FormsModule } from '@angular/forms';
+
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {FlexLayoutModule } from '@angular/flex-layout';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { PageModule } from './pages/page.module';
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
-    SliderComponent,
     NavtabsComponent,
     SidenavListComponent,
     FooterComponent
@@ -30,9 +30,11 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    NgxHmCarouselModule,
     FormsModule,
-    FlexLayoutModule
+    ReactiveFormsModule,
+    FlexLayoutModule,
+    SharedModule,
+    PageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
