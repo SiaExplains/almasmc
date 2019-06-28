@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageModule } from './pages/page.module';
 import { SharedModule } from './shared/shared.module';
 import { NewsComponent } from './news/news.component';
+import { SiauiModule } from './siaui/siaui.module';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NewsComponent } from './news/news.component';
     ReactiveFormsModule,
     FlexLayoutModule,
     SharedModule,
-    PageModule
+    PageModule,
+    SiauiModule
   ],
   providers: [],
   bootstrap: [AppComponent]

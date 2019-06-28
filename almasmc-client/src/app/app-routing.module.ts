@@ -7,6 +7,10 @@ import { NewsComponent } from './news/news.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { InquiryComponent } from './pages/inquiry/inquiry.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
+import { DoorToDoorComponent } from './pages/door-to-door/door-to-door.component';
+import { TranslatorComponent } from './pages/translator/translator.component';
+import { ClearanceComponent } from './pages/clearance/clearance.component';
+import { SourcingComponent } from './pages/sourcing/sourcing.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -16,6 +20,10 @@ const routes: Routes = [
     { path: 'services', component: ServicesComponent },
     { path: 'inquiry', component: InquiryComponent },
     { path: 'jobs', component: JobsComponent },
+    { path: 'door-to-door', component: DoorToDoorComponent },
+    { path: 'translator', component: TranslatorComponent },
+    { path: 'clearance', component: ClearanceComponent },
+    { path: 'sourcing', component: SourcingComponent },
   ];
 
 @NgModule({

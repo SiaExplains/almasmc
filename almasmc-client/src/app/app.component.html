@@ -5,11 +5,10 @@
   <mat-sidenav-content>
     <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header>
     <app-navtabs></app-navtabs>
-    <br /><br />
     <main>
-      <router-outlet></router-outlet>
-    </main>
-    <br /><br />
+        <router-outlet></router-outlet>
+      </main>
+
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

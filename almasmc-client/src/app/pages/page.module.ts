@@ -8,6 +8,13 @@ import { AboutComponent } from './about/about.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { ServicesComponent } from './services/services.component';
 import { InquiryComponent } from './inquiry/inquiry.component';
+import { SiauiModule } from '../siaui/siaui.module';
+import { DoorToDoorComponent } from './door-to-door/door-to-door.component';
+import { TranslatorComponent } from './translator/translator.component';
+import { ClearanceComponent } from './clearance/clearance.component';
+import { SourcingComponent } from './sourcing/sourcing.component';
+import { AppRoutingModule } from '../app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -17,15 +24,21 @@ import { InquiryComponent } from './inquiry/inquiry.component';
     AboutComponent,
     JobsComponent,
     ServicesComponent,
-    InquiryComponent
+    InquiryComponent,
+    DoorToDoorComponent,
+    TranslatorComponent,
+    ClearanceComponent,
+    SourcingComponent,
   ],
   imports: [
+    AppRoutingModule,
     CommonModule,
-    SharedModule
+    SharedModule,
+    SiauiModule
   ],
   exports: [
     HomeComponent,
-    SliderComponent,
+    SliderComponent
   ]
 })
 export class PageModule { }

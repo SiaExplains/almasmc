@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobsComponent implements OnInit {
 
+  firstName = '';
+  lastName = '';
+  status = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  showMessage() {
+    alert(`${this.firstName}  ${this.lastName}`);
+  }
+  disableB1() {
+    this.status = true;
+  }
 }

@@ -1,0 +1,68 @@
+.trailer-container {
+
+  /* border: 1px solid black; */
+  background-repeat: no-repeat;
+
+  align-items: center;
+  align-content: center;
+  display: flex;
+
+  font-family: 'IranSans' !important;
+
+  cursor: default;
+}
+.trailer-container a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.trailer-container .trailer-label {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40px;
+  color: white !important ;
+  text-decoration: none !important;
+  font-size: 11pt !important;
+}
+.trailer-container  .trailer-shadow {
+  background-color: rgba(50,50,50,0);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.trailer-container:hover   {
+  cursor: pointer;
+}
+
+.trailer-container:hover .trailer-label {
+  -webkit-animation-name: movement; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: movement;
+  animation-duration: 0.5s;
+  animation: movement 0.5s forwards;
+-webkit-animation: movement 0.5s forwards; /* for less modern browsers */
+}
+
+.trailer-container:hover  .trailer-shadow {
+  background-color: rgba(50,50,50,0.3);
+  width: 100%;
+  height: 95%;
+}
+
+@-webkit-keyframes movement {
+  from {
+    transform: translateY(0);
+  }
+  to {transform: translateY(-25px);}
+}
+
+/* Standard syntax */
+@keyframes movement {
+  from {
+    transform: translateY(0);
+  }
+  to {transform: translateY(-25px);}
+}
