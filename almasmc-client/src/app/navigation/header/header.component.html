@@ -1,6 +1,6 @@
 <mat-toolbar>
-    <div fxLayout="Row">
-        <div fxLayout="Column">
+    <div fxLayout="row" fxLayoutAlign="center center" >
+        <div fxLayout="Column" fxShow fxHide.gt-xs>
             <button mat-icon-button (click)="onToggleOpenSideNav()">
                 <mat-icon>menu</mat-icon>
               </button>
@@ -9,9 +9,20 @@
             <img src="/assets/images/menu-logo.png">
         </div>
         <div  fxLayout="Column" class="menu-text">
-            مشاوره رایگان  | &nbsp;&nbsp;&nbsp;
-            شماره تماس : ۰۹۰۲۴۶۰۰۱۰۴ &nbsp;&nbsp;&nbsp;
-            ایمیل: Commerce.almas@gmail.com &nbsp;&nbsp;&nbsp;
+          <div fxLayout="Row" fxHide fxShow.gt-xs>
+
+              <div fxFlex>
+                  مشاوره رایگان  |
+              </div>
+
+              <div fxFlex>
+                  شماره تماس : ۰۹۰۲۴۶۰۰۱۰۴
+              </div>
+              <div fxFlex>
+                  ایمیل: Commerce.almas@gmail.com
+              </div>
+          </div>
+
         </div>
     </div>
   </mat-toolbar>

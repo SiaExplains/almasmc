@@ -25,7 +25,9 @@
   top: 40px;
   color: white !important ;
   text-decoration: none !important;
-  font-size: 11pt !important;
+  font-size: normal;
+
+
 }
 .trailer-container  .trailer-shadow {
   background-color: rgba(50,50,50,0);
