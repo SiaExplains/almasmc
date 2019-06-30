@@ -14,6 +14,7 @@ import { TranslatorComponent } from './translator/translator.component';
 import { ClearanceComponent } from './clearance/clearance.component';
 import { SourcingComponent } from './sourcing/sourcing.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { DiagComponent } from './jobs/diag/diag.component';
 
 
 @NgModule({
@@ -29,6 +30,11 @@ import { AppRoutingModule } from '../app-routing.module';
     TranslatorComponent,
     ClearanceComponent,
     SourcingComponent,
+    DiagComponent,
+    DiagComponent
+  ],
+  entryComponents: [
+    DiagComponent
   ],
   imports: [
     AppRoutingModule,
@@ -38,7 +44,8 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   exports: [
     HomeComponent,
-    SliderComponent
+    SliderComponent,
+    DiagComponent
   ]
 })
 export class PageModule { }

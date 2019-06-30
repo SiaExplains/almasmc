@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { DiagComponent } from './diag/diag.component';
 
 @Component({
   selector: 'app-jobs',
@@ -7,18 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobsComponent implements OnInit {
 
-  firstName = '';
-  lastName = '';
-  status = false;
-  constructor() { }
+  animal: string;
+  name: string;
 
-  ngOnInit() {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
-  showMessage() {
-    alert(`${this.firstName}  ${this.lastName}`);
-  }
-  disableB1() {
-    this.status = true;
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DiagComponent, {
+      width: '250px',
+      data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.animal = result;
+    });
   }
 }
