@@ -11,6 +11,7 @@ import { DoorToDoorComponent } from './pages/door-to-door/door-to-door.component
 import { TranslatorComponent } from './pages/translator/translator.component';
 import { ClearanceComponent } from './pages/clearance/clearance.component';
 import { SourcingComponent } from './pages/sourcing/sourcing.component';
+import { LoginComponent } from './auth/login/login.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -24,7 +25,11 @@ const routes: Routes = [
     { path: 'translator', component: TranslatorComponent },
     { path: 'clearance', component: ClearanceComponent },
     { path: 'sourcing', component: SourcingComponent },
+    { path: 'login', component: LoginComponent}
   ];
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

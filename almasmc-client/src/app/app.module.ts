@@ -17,6 +17,7 @@ import { PageModule } from './pages/page.module';
 import { SharedModule } from './shared/shared.module';
 import { NewsComponent } from './news/news.component';
 import { SiauiModule } from './siaui/siaui.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SiauiModule } from './siaui/siaui.module';
     FlexLayoutModule,
     SharedModule,
     PageModule,
-    SiauiModule
+    SiauiModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

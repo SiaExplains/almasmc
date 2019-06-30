@@ -5,7 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
-import {MatListModule, MatTabsModule} from '@angular/material';
+import {MatListModule, MatTabsModule } from '@angular/material';
 
 @NgModule({
   imports: [
