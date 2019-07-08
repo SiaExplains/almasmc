@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef  } from '@angular/core';
 import { MaterialModule } from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
 import { NewsComponent } from './news/news.component';
 import { SiauiModule } from './siaui/siaui.module';
 import { AuthModule } from './auth/auth.module';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -40,7 +41,7 @@ import { AuthModule } from './auth/auth.module';
     SharedModule,
     PageModule,
     SiauiModule,
-    AuthModule
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
